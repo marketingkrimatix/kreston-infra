@@ -1,0 +1,41 @@
+@import "@fontsource/manrope/400.css";
+@import "@fontsource/manrope/500.css";
+@import "@fontsource/manrope/600.css";
+@import "@fontsource/manrope/700.css";
+@import "@fontsource/dm-sans/400.css";
+@import "@fontsource/dm-sans/500.css";
+@import "@fontsource/dm-sans/600.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { --ink: #17212b; --copper: #c87941; }
+html { scroll-behavior: smooth; }
+body { color: var(--ink); background: #fff; font-family: "Manrope", sans-serif; }
+::selection { background: #c87941; color: white; }
+
+@layer components {
+  .nav-link { @apply relative py-7 text-[12px] font-bold uppercase tracking-[0.13em] text-ink/70 transition hover:text-ink; }
+  .nav-link::after { content: ""; @apply absolute bottom-5 left-0 h-0.5 w-0 bg-copper transition-all duration-300; }
+  .nav-link:hover::after, .nav-link.active::after { @apply w-full; }
+  .nav-link.active { @apply text-ink; }
+  .button-dark { @apply inline-flex items-center justify-center gap-3 bg-ink px-5 py-3.5 text-[13px] font-bold text-white transition duration-300 hover:bg-copper; }
+  .button-light { @apply inline-flex items-center justify-center gap-3 bg-white px-6 py-4 text-[13px] font-bold text-ink transition duration-300 hover:bg-copper hover:text-white; }
+  .button-outline-light { @apply inline-flex items-center justify-center gap-3 border border-white/30 px-6 py-4 text-[13px] font-bold text-white transition duration-300 hover:border-white hover:bg-white hover:text-ink; }
+  .eyebrow { @apply flex items-center gap-3 text-xs font-bold uppercase tracking-[0.22em]; }
+  .eyebrow span { @apply block h-px w-9 bg-current; }
+  .section-title { @apply font-display text-4xl font-medium leading-[1.05] tracking-[-0.045em] sm:text-5xl lg:text-[3.5rem]; }
+  .footer-title { @apply text-xs font-bold uppercase tracking-[0.22em] text-white; }
+  .footer-link { @apply flex w-fit items-center gap-2 text-sm text-white/58 transition hover:text-white; }
+  .field-label { @apply grid gap-2 text-xs font-bold uppercase tracking-[0.13em] text-ink/70; }
+  .field { @apply w-full border border-ink/15 bg-white px-4 py-3.5 text-sm font-normal normal-case tracking-normal text-ink outline-none transition placeholder:text-ink/35 focus:border-copper; }
+}
+
+.blueprint-grid { background-image: linear-gradient(rgba(255,255,255,.4) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.4) 1px, transparent 1px); background-size: 48px 48px; }
+.number-outline { -webkit-text-stroke: 1px rgba(200,121,65,.35); color: transparent; }
+.image-zoom img { transition: transform .8s cubic-bezier(.2,.7,.2,1); }
+.image-zoom:hover img { transform: scale(1.04); }
+.reveal-up { animation: reveal-up .8s cubic-bezier(.2,.7,.2,1) both; }
+@keyframes reveal-up { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; } }

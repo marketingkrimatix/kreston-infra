@@ -79,19 +79,19 @@ export default function HomePage() {
 
       <section className="bg-ink py-20 text-white sm:py-28 lg:py-32">
         <div className="mx-auto max-w-site px-5 sm:px-8">
-          <SectionHeading eyebrow="Selected disciplines" title="Built across sectors. United by precision." copy="A visual look at the sectors and disciplines in which Kreston is equipped to deliver." light />
+          <SectionHeading eyebrow="Selected projects" title="Our work, built into the landscape." copy="A closer look at Kreston’s on-site execution across infrastructure, interiors, fabrication, and residential construction." light />
           <div className="mt-12 grid gap-5 lg:grid-cols-[1.25fr_.75fr]">
-            <Link href="/projects" className="group relative min-h-[520px] overflow-hidden image-zoom">
-              <Image src="/images/infrastructure.png" alt="Infrastructure development capability" fill sizes="(max-width: 1024px) 100vw, 65vw" className="object-cover" />
+            <Link href="/projects#check-dam" className="group relative min-h-[520px] overflow-hidden image-zoom">
+              <Image src="/images/check-dam/IMG-20260919-WA0023.jpg" alt="Check dam civil infrastructure project" fill sizes="(max-width: 1024px) 100vw, 65vw" className="object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/5 to-transparent" />
-              <div className="absolute inset-x-0 bottom-0 flex items-end justify-between p-7 sm:p-9"><div><p className="text-[10px] font-bold uppercase tracking-[.22em] text-copper">Infrastructure</p><h3 className="mt-2 font-display text-3xl font-medium sm:text-4xl">Development projects</h3></div><ArrowRight className="h-6 w-6 transition group-hover:translate-x-1" /></div>
+              <div className="absolute inset-x-0 bottom-0 flex items-end justify-between p-7 sm:p-9"><div><p className="text-[10px] font-bold uppercase tracking-[.22em] text-copper">Infrastructure</p><h3 className="mt-2 font-display text-3xl font-medium sm:text-4xl">Check Dam</h3></div><ArrowRight className="h-6 w-6 transition group-hover:translate-x-1" /></div>
             </Link>
             <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-1">
-              <Link href="/projects" className="group relative min-h-[250px] overflow-hidden image-zoom"><Image src="/images/residential-villa.png" alt="Residential and villa construction capability" fill sizes="(max-width: 1024px) 50vw, 35vw" className="object-cover" /><div className="absolute inset-0 bg-gradient-to-t from-black/75 to-transparent" /><div className="absolute inset-x-0 bottom-0 p-6"><p className="text-[10px] font-bold uppercase tracking-[.2em] text-copper">Residential</p><h3 className="mt-1 font-display text-2xl font-medium">Apartments & villas</h3></div></Link>
-              <Link href="/projects" className="group relative min-h-[250px] overflow-hidden image-zoom"><Image src="/images/site-engineering.png" alt="Site engineering and inspection capability" fill sizes="(max-width: 1024px) 50vw, 35vw" className="object-cover" /><div className="absolute inset-0 bg-gradient-to-t from-black/75 to-transparent" /><div className="absolute inset-x-0 bottom-0 p-6"><p className="text-[10px] font-bold uppercase tracking-[.2em] text-copper">Execution</p><h3 className="mt-1 font-display text-2xl font-medium">Engineering oversight</h3></div></Link>
+              <Link href="/projects#jubilee-hills-kings-office" className="group relative min-h-[250px] overflow-hidden image-zoom"><Image src="/images/jubliee-hills-kings-office/IMG-20260919-WA0154.jpg" alt="Jubilee Hills King’s Office interior" fill sizes="(max-width: 1024px) 50vw, 35vw" className="object-cover" /><div className="absolute inset-0 bg-gradient-to-t from-black/75 to-transparent" /><div className="absolute inset-x-0 bottom-0 p-6"><p className="text-[10px] font-bold uppercase tracking-[.2em] text-copper">Interiors</p><h3 className="mt-1 font-display text-2xl font-medium">King’s Office</h3></div></Link>
+              <Link href="/projects#tandur-site" className="group relative min-h-[250px] overflow-hidden image-zoom"><Image src="/images/villas-and-buildings/tandur-site/IMG-20260919-WA0044.jpg" alt="Tandur villa exterior" fill sizes="(max-width: 1024px) 50vw, 35vw" className="object-cover" /><div className="absolute inset-0 bg-gradient-to-t from-black/75 to-transparent" /><div className="absolute inset-x-0 bottom-0 p-6"><p className="text-[10px] font-bold uppercase tracking-[.2em] text-copper">Residential</p><h3 className="mt-1 font-display text-2xl font-medium">Tandur Villa</h3></div></Link>
             </div>
           </div>
-          <p className="mt-5 text-xs leading-5 text-white/38">Visuals represent Kreston’s stated service capabilities; individual project records can be added as the portfolio expands.</p>
+          <Link href="/projects" className="mt-7 inline-flex items-center gap-3 text-sm font-bold text-white transition hover:text-copper">Explore the complete portfolio <ArrowRight className="h-4 w-4" /></Link>
         </div>
       </section>
 

@@ -1,11 +1,9 @@
 import {
   Building2,
   DraftingCompass,
-  Factory,
   House,
   Layers3,
-  Pipette,
-  ScanSearch,
+  MapPinned,
   ShieldCheck,
   UsersRound,
   Workflow,
@@ -18,78 +16,64 @@ export type Service = {
   shortTitle: string;
   description: string;
   icon: LucideIcon;
-  image?: string;
+  image: string;
 };
 
 export const services: Service[] = [
   {
     number: "01",
-    title: "Civil Construction Works",
-    shortTitle: "Civil Construction",
-    description: "Execution of structural and civil works with strict quality control and engineering precision.",
-    icon: Building2,
-    image: "/images/civil-structure.png",
+    title: "Residential Development",
+    shortTitle: "Residential Development",
+    description: "Premium villas, apartments, and gated communities planned for modern living and lasting value.",
+    icon: House,
+    image: "/images/villas-and-buildings/mehdipatnam-site/IMG-20260919-WA0009.jpg",
   },
   {
     number: "02",
-    title: "Infrastructure Development Projects",
-    shortTitle: "Infrastructure Development",
-    description: "Development of essential infrastructure with a focus on durability, safety, and long-term performance.",
-    icon: Factory,
-    image: "/images/infrastructure.png",
+    title: "Land Development",
+    shortTitle: "Land Development",
+    description: "Layout planning, plotting, and site optimization that make thoughtful use of land potential.",
+    icon: MapPinned,
+    image: "/images/development-sites.png",
   },
   {
     number: "03",
-    title: "Independent Residential Apartments & Duplex Villas",
-    shortTitle: "Residential & Villas",
-    description: "Construction of residential apartments and duplex villas with quality finishes and efficient design.",
-    icon: House,
-    image: "/images/residential-villa.png",
+    title: "Infrastructure Development",
+    shortTitle: "Infrastructure Development",
+    description: "Roads, drainage, and integrated utilities designed as the foundation for connected developments.",
+    icon: Building2,
+    image: "/images/check-dam/IMG-20260919-WA0023.jpg",
   },
   {
     number: "04",
-    title: "Fabrication & Laying Services",
-    shortTitle: "Fabrication & Laying",
-    description: "Accurate fabrication and systematic laying works executed as per approved specifications.",
+    title: "Premium Interior Development",
+    shortTitle: "Premium Interiors",
+    description: "Refined interior spaces aligned with modern lifestyle expectations and everyday usability.",
     icon: Layers3,
-  },
-  {
-    number: "05",
-    title: "Interior & Exterior Construction Works",
-    shortTitle: "Interior & Exterior Works",
-    description: "Completion of interior and exterior elements aligned with architectural and design intent.",
-    icon: DraftingCompass,
-  },
-  {
-    number: "06",
-    title: "Plumbing Contracting Services",
-    shortTitle: "Plumbing Contracting",
-    description: "Installation and execution of reliable plumbing systems ensuring functionality and compliance.",
-    icon: Pipette,
+    image: "/images/jubliee-hills-kings-office/IMG-20260919-WA0154.jpg",
   },
 ];
 
 export const capabilities = [
-  { title: "Plan & inspect", text: "Comprehensive planning, design, and inspection of civil and infrastructure projects.", icon: ScanSearch },
-  { title: "Oversee execution", text: "Complete oversight of design and construction activities.", icon: ShieldCheck },
-  { title: "Monitor the site", text: "Regular and periodic site visits to monitor quality, safety, and progress.", icon: Building2 },
-  { title: "Guide clients", text: "Professional consultation and continuous guidance to clients and owners.", icon: UsersRound },
-  { title: "Verify details", text: "Accurate interpretation and verification of drawings and technical specifications.", icon: DraftingCompass },
-  { title: "Coordinate teams", text: "Strong coordination between engineers, site teams, and stakeholders.", icon: Workflow },
-  { title: "Supervise quality", text: "Quality-centric execution through multi-level supervision.", icon: ShieldCheck },
+  { title: "Strategic locations", text: "Development driven by strategic location selection.", icon: MapPinned },
+  { title: "Efficient design", text: "Efficient design aligned with modern residential demand.", icon: DraftingCompass },
+  { title: "Controlled execution", text: "Structured execution with strict quality control.", icon: ShieldCheck },
+  { title: "Premium delivery", text: "Focus on premium residential and interior delivery.", icon: House },
+  { title: "Project governance", text: "Strong project governance and coordination.", icon: Workflow },
+  { title: "Long-term value", text: "Long-term asset value and usability focus.", icon: UsersRound },
 ];
 
 export const contact = {
   address: "2nd Floor, Capitol Towers, Plot no 1, beside N Convention Road, Surya Enclave, Madhapur, Hyderabad, Telangana 500081",
   phones: ["+91 91004 00200", "+91 99199 01999"],
-  email: "Smimran12345@gmail.com",
-  website: "new.krestoninfra.com",
+  email: "info@krestoninfra.com",
+  alternateEmail: "smimran12345@gmail.com",
 };
 
 export const navItems = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
-  { label: "Services", href: "/services" },
+  { label: "What We Develop", href: "/services" },
   { label: "Projects", href: "/projects" },
   { label: "Why Kreston", href: "/capabilities" },
   { label: "Contact", href: "/contact" },

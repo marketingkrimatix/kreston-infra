@@ -5,10 +5,10 @@ import { Footer } from "@/components/footer";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://new.krestoninfra.com"),
-  title: { default: "Kreston Infra Projects | Civil & Infrastructure Construction", template: "%s | Kreston Infra Projects" },
-  description: "Kreston Infra Projects is a professionally managed civil and infrastructure construction company headquartered in Madhapur, Hyderabad.",
-  keywords: ["civil construction Hyderabad", "infrastructure projects Telangana", "Kreston Infra Projects", "residential construction Hyderabad"],
-  openGraph: { title: "Kreston Infra Projects", description: "Professional Construction. Premium Execution.", type: "website", locale: "en_IN", images: ["/images/hero-construction.png"] },
+  title: { default: "Kreston Infra Projects | Real Estate & Infrastructure Development", template: "%s | Kreston Infra Projects" },
+  description: "Kreston Infra Projects is an integrated real estate development company creating residential and infrastructure assets across Telangana.",
+  keywords: ["real estate development Hyderabad", "residential development Telangana", "land development Hyderabad", "Kreston Infra Projects"],
+  openGraph: { title: "Kreston Infra Projects", description: "Building Value. Developing Futures.", type: "website", locale: "en_IN", images: ["/images/villas-and-buildings/mehdipatnam-site/IMG-20260919-WA0009.jpg"] },
   robots: { index: true, follow: true },
 };
 

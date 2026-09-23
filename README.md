@@ -1,8 +1,8 @@
 # Kreston Infra
 
-Marketing website for Kreston Infra Projects, a civil and infrastructure construction company headquartered in Hyderabad and operating across Telangana.
+Marketing website for Kreston Infra Projects, an integrated real estate development company headquartered in Hyderabad and operating across Telangana.
 
-The site presents Kreston's construction services, project disciplines, delivery capabilities, company information, and contact details in a responsive Next.js experience.
+The site presents Kreston's residential, land, infrastructure, and interior development areas, named projects, strengths, company information, and contact details in a responsive Next.js experience. Company content follows `Kreston Company Profile updated v1.pdf`.
 
 ## Tech stack
 
@@ -60,9 +60,9 @@ npm run start
 | --- | --- |
 | `/` | Homepage and company overview |
 | `/about` | Company profile and approach |
-| `/services` | Civil, infrastructure, residential, fabrication, construction, and plumbing services |
-| `/projects` | Project disciplines and portfolio presentation |
-| `/capabilities` | Delivery capabilities and operating principles |
+| `/services` | Four development areas |
+| `/projects` | Named residential projects, development sites, and photo portfolio |
+| `/capabilities` | Key strengths and development approach |
 | `/contact` | Contact details and enquiry form |
 
 ## Project structure

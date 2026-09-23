@@ -18,9 +18,9 @@ export function ContactForm() {
       </div>
       <div className="grid gap-5 sm:grid-cols-2">
         <label className="field-label">Email<input required name="email" type="email" className="field" placeholder="you@company.com" /></label>
-        <label className="field-label">Service<select name="service" className="field"><option>Civil Construction Works</option><option>Infrastructure Development</option><option>Residential Apartments & Villas</option><option>Fabrication & Laying</option><option>Interior & Exterior Works</option><option>Plumbing Contracting</option></select></label>
+        <label className="field-label">Development interest<select name="service" className="field"><option>Residential Development</option><option>Land Development</option><option>Infrastructure Development</option><option>Premium Interior Development</option></select></label>
       </div>
-      <label className="field-label">Project details<textarea required name="message" rows={5} className="field resize-none" placeholder="Tell us a little about your requirement" /></label>
+      <label className="field-label">Project details<textarea required name="message" rows={5} className="field resize-none" placeholder="Tell us a little about your development plans" /></label>
       <button type="submit" className="button-dark w-full sm:w-fit">Submit enquiry <ArrowRight className="h-4 w-4" /></button>
       <p className="text-xs leading-5 text-ink/45">This demonstration form validates in the browser. Connect it to your preferred email or CRM service before production launch.</p>
     </form>

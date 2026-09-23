@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, ChevronRight } from "lucide-react";
 
-export function PageHero({ eyebrow, title, description, image = "/images/hero-construction.png" }: { eyebrow: string; title: string; description: string; image?: string }) {
+export function PageHero({ eyebrow, title, description, image = "/images/villas-and-buildings/mehdipatnam-site/IMG-20260919-WA0009.jpg" }: { eyebrow: string; title: string; description: string; image?: string }) {
   return (
     <section className="relative isolate min-h-[460px] overflow-hidden bg-ink text-white">
       <Image src={image} alt="" fill sizes="100vw" className="object-cover opacity-45" priority />

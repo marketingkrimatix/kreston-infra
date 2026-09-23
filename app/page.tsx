@@ -9,19 +9,19 @@ export default function HomePage() {
   return (
     <>
       <section className="relative isolate min-h-[calc(100svh-78px)] overflow-hidden bg-ink text-white">
-        <Image src="/images/hero-construction.png" alt="Construction structure rising over the Hyderabad skyline" fill sizes="100vw" className="object-cover" priority />
+        <Image src="/images/villas-and-buildings/mehdipatnam-site/IMG-20260919-WA0009.jpg" alt="Residential building development in Mehdipatnam" fill sizes="100vw" className="object-cover" priority />
         <div className="absolute inset-0 bg-gradient-to-r from-[#0d1721]/95 via-[#0d1721]/65 to-[#0d1721]/10" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#0d1721]/60 via-transparent to-transparent" />
         <div className="blueprint-grid absolute inset-y-0 left-0 w-1/2 opacity-[0.06]" />
         <div className="relative mx-auto flex min-h-[calc(100svh-78px)] max-w-site items-center px-5 py-20 sm:px-8">
           <div className="max-w-4xl reveal-up">
-            <p className="eyebrow text-copper"><span />Civil & infrastructure construction</p>
+            <p className="eyebrow text-copper"><span />Real estate & infrastructure development</p>
             <h1 className="mt-6 font-display text-[3.3rem] font-medium leading-[.94] tracking-[-0.055em] sm:text-7xl lg:text-[6.2rem]">
-              Engineered with<br /><span className="text-white/60">purpose.</span> Built to last.
+              Building value.<br /><span className="text-white/60">Developing futures.</span>
             </h1>
-            <p className="mt-7 max-w-xl text-base leading-7 text-white/68 sm:text-lg">Structured planning, technical expertise, and disciplined execution—across residential and infrastructure projects in Telangana.</p>
+            <p className="mt-7 max-w-xl text-base leading-7 text-white/68 sm:text-lg">Integrated residential and infrastructure developments shaped by strategic planning, efficient design, and disciplined execution across Telangana.</p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-              <Link href="/services" className="button-light">Explore our services <ArrowRight className="h-4 w-4" /></Link>
+              <Link href="/services" className="button-light">What we develop <ArrowRight className="h-4 w-4" /></Link>
               <Link href="/contact" className="button-outline-light">Discuss your project</Link>
             </div>
           </div>
@@ -40,17 +40,17 @@ export default function HomePage() {
             </div>
             <div className="absolute -bottom-7 -right-3 bg-ink px-7 py-6 text-white sm:-right-7 sm:px-9 sm:py-8">
               <p className="font-display text-3xl font-medium tracking-tight">End-to-end</p>
-              <p className="mt-1 text-[10px] font-bold uppercase tracking-[.2em] text-white/50">Construction solutions</p>
+              <p className="mt-1 text-[10px] font-bold uppercase tracking-[.2em] text-white/50">Development lifecycle</p>
             </div>
           </div>
           <div>
-            <SectionHeading eyebrow="Who we are" title="A disciplined approach to every build." />
+            <SectionHeading eyebrow="Who we are" title="A considered approach to every development." />
             <div className="mt-7 space-y-5 text-[15px] leading-7 text-ink/65">
-              <p>Kreston Infra Projects is a professionally managed civil and infrastructure construction company delivering comprehensive solutions across residential and infrastructure sectors.</p>
-              <p>Headquartered in Madhapur, Hyderabad, the company operates across Telangana and executes projects of all scales with a structured, quality-driven approach.</p>
+              <p>Kreston Infra Projects is an integrated real estate development company focused on creating high-value residential and infrastructure assets across Telangana.</p>
+              <p>Headquartered in Madhapur, Hyderabad, Kreston manages the complete development lifecycle—from land identification and planning to execution and delivery.</p>
             </div>
             <div className="mt-8 grid gap-3 sm:grid-cols-2">
-              {["Carefully sourced materials", "Disciplined supervision", "Strong internal coordination", "Durable, value-driven outcomes"].map((item) => <p key={item} className="flex items-center gap-3 text-sm font-semibold"><span className="grid h-6 w-6 place-items-center bg-copper/10 text-copper"><Check className="h-3.5 w-3.5" /></span>{item}</p>)}
+              {["Strategic location selection", "Efficient design", "Disciplined execution", "Long-term asset value"].map((item) => <p key={item} className="flex items-center gap-3 text-sm font-semibold"><span className="grid h-6 w-6 place-items-center bg-copper/10 text-copper"><Check className="h-3.5 w-3.5" /></span>{item}</p>)}
             </div>
             <Link href="/about" className="mt-9 inline-flex items-center gap-3 text-sm font-bold text-ink transition hover:text-copper">Discover Kreston <MoveRight className="h-4 w-4" /></Link>
           </div>
@@ -60,10 +60,10 @@ export default function HomePage() {
       <section className="bg-mist py-20 sm:py-28 lg:py-32">
         <div className="mx-auto max-w-site px-5 sm:px-8">
           <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
-            <SectionHeading eyebrow="What we do" title="Construction expertise, end to end." copy="Comprehensive civil and infrastructure services delivered through structured planning, technical expertise, and disciplined execution." />
-            <Link href="/services" className="inline-flex items-center gap-3 text-sm font-bold text-ink transition hover:text-copper">View all services <ArrowRight className="h-4 w-4" /></Link>
+            <SectionHeading eyebrow="What we develop" title="Places designed for enduring value." copy="Residential, land, infrastructure, and interior developments connected by strategic planning and disciplined delivery." />
+            <Link href="/services" className="inline-flex items-center gap-3 text-sm font-bold text-ink transition hover:text-copper">Explore development areas <ArrowRight className="h-4 w-4" /></Link>
           </div>
-          <div className="mt-12 grid border-l border-t border-ink/10 md:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-12 grid border-l border-t border-ink/10 md:grid-cols-2">
             {services.map((service) => {
               const Icon = service.icon;
               return <article key={service.number} className="group relative min-h-[310px] overflow-hidden border-b border-r border-ink/10 bg-white p-7 transition hover:bg-ink sm:p-9">
@@ -79,7 +79,7 @@ export default function HomePage() {
 
       <section className="bg-ink py-20 text-white sm:py-28 lg:py-32">
         <div className="mx-auto max-w-site px-5 sm:px-8">
-          <SectionHeading eyebrow="Selected projects" title="Our work, built into the landscape." copy="A closer look at Kreston’s on-site execution across infrastructure, interiors, fabrication, and residential construction." light />
+          <SectionHeading eyebrow="Selected projects" title="Development made tangible." copy="A closer look at Kreston’s residential, infrastructure, and interior work—from active sites to finished spaces." light />
           <div className="mt-12 grid gap-5 lg:grid-cols-[1.25fr_.75fr]">
             <Link href="/projects#check-dam" className="group relative min-h-[520px] overflow-hidden image-zoom">
               <Image src="/images/check-dam/IMG-20260919-WA0023.jpg" alt="Check dam civil infrastructure project" fill sizes="(max-width: 1024px) 100vw, 65vw" className="object-cover" />
@@ -97,7 +97,7 @@ export default function HomePage() {
 
       <section className="bg-white py-20 sm:py-28 lg:py-32">
         <div className="mx-auto grid max-w-site gap-14 px-5 sm:px-8 lg:grid-cols-[.85fr_1.15fr] lg:gap-20">
-          <div className="lg:sticky lg:top-28 lg:self-start"><SectionHeading eyebrow="Why Kreston" title="Control where it matters most." copy="Quality is built through process. Kreston connects the details—from drawings and inspections to people and progress." /><Link href="/capabilities" className="mt-8 inline-flex items-center gap-3 text-sm font-bold transition hover:text-copper">Explore our capabilities <ArrowRight className="h-4 w-4" /></Link></div>
+          <div className="lg:sticky lg:top-28 lg:self-start"><SectionHeading eyebrow="Why Kreston" title="Value begins with the right decisions." copy="From location and land potential to design, governance, and execution, Kreston keeps long-term usability in view." /><Link href="/capabilities" className="mt-8 inline-flex items-center gap-3 text-sm font-bold transition hover:text-copper">Explore our strengths <ArrowRight className="h-4 w-4" /></Link></div>
           <div className="grid gap-px bg-ink/10 sm:grid-cols-2">
             {capabilities.slice(0,6).map((item, index) => { const Icon = item.icon; return <div key={item.title} className="bg-mist p-7 sm:p-8"><div className="flex items-center justify-between"><Icon className="h-7 w-7 text-copper" strokeWidth={1.5} /><span className="text-xs font-bold text-ink/25">0{index+1}</span></div><h3 className="mt-8 font-display text-xl font-semibold">{item.title}</h3><p className="mt-3 text-sm leading-6 text-ink/55">{item.text}</p></div>})}
           </div>

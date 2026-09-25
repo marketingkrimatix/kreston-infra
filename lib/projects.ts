@@ -17,9 +17,9 @@ export const projects: Project[] = [
       "/images/check-dam/IMG-20260919-WA0023.jpg",
       "/images/check-dam/IMG-20260112-WA0048.jpg",
       "/images/check-dam/IMG-20260918-WA0032.jpg",
-      "/images/check-dam/IMG-20260918-WA0035.jpg",
-      "/images/check-dam/IMG-20260918-WA0039.jpg",
       "/images/check-dam/IMG-20260918-WA0042.jpg",
+      "/images/check-dam/IMG-20260918-WA0035.jpg",
+      "/images/check-dam/IMG-20260918-WA0033.jpg",
     ],
   },
   {
